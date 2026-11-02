@@ -1,0 +1,47 @@
+{
+  "name": "adminpanelbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "watch": "ts-node-dev --respawn --transpile-only src/server.ts  config:env/dev.env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.850.0",
+    "@aws-sdk/lib-storage": "^3.850.0",
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "compress-pdf": "^0.5.5",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "express-http-context": "^2.0.1",
+    "http-status-codes": "^2.3.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "loadash": "^1.0.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.16.4",
+    "multer": "^2.0.2",
+    "resend": "^6.5.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/crypto-js": "^4.2.2",
+    "@types/express": "^5.0.3",
+    "@types/lodash": "^4.17.20",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
